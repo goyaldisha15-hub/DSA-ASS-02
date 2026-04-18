@@ -1,0 +1,61 @@
+==================================================
+  LDST - Linear Data Structures Toolkit
+==================================================
+
+--- TASK 1: Dynamic Array ---
+Appending 1 to 10 (capacity starts at 2):
+  >> Array was full! Resized to capacity: 4
+  >> Array was full! Resized to capacity: 8
+  >> Array was full! Resized to capacity: 16
+  Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  | size = 10 | capacity = 16
+Popping 3 elements:
+  Popped: 10
+  Popped: 9
+  Popped: 8
+  Array = [1, 2, 3, 4, 5, 6, 7]  | size = 7 | capacity = 16
+
+--- TASK 2A: Singly Linked List ---
+Insert 3 at beginning:
+  SLL: 3 -> None
+Insert 3 at end:
+  SLL: 3 -> 3 -> None
+Insert 1 at beginning, 7 at end:
+  SLL: 1 -> 3 -> 3 -> 7 -> None
+Delete value 3:
+  SLL: 1 -> 3 -> 7 -> None
+  >> Value 99 not found in list!
+
+--- TASK 2B: Doubly Linked List ---
+Initial list (10, 20, 30):
+  DLL: 10 <-> 20 <-> 30 <-> None
+Insert 25 after node 20:
+  DLL: 10 <-> 20 <-> 25 <-> 30 <-> None
+Delete at position 1 (0-based):
+  DLL: 10 <-> 25 <-> 30 <-> None
+  >> Position 10 does not exist!
+
+--- TASK 3A: Stack ---
+  Pushed 10, 20, 30
+  Peek: 30
+  Pop: 30
+  Pop: 20
+  Peek: 10
+  >> Stack is empty! Underflow.
+
+--- TASK 3B: Queue ---
+  Enqueued 1, 2, 3
+  Front: 1
+  Dequeue: 1
+  Dequeue: 2
+  Front: 3
+  >> Queue is empty! Underflow.
+
+--- TASK 4: Balanced Parentheses Checker ---
+  "([{}])" -> Balanced
+  "([)]"   -> Not Balanced
+  "((("    -> Not Balanced
+  ""       -> Balanced
+
+==================================================
+  All test cases done!
+==================================================
